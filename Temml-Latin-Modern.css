@@ -52,6 +52,7 @@ math {
  math.tml-display {
   display: block;
   width: 100%;
+  overflow: auto hidden;
 }
 
 *.mathscr {
