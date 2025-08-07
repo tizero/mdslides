@@ -16,6 +16,10 @@
 */
 
 /* BEGIN custom elements */
+section > ul > li,
+section > ol > li {
+	margin: 1rem 0;
+}
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #282c34;
