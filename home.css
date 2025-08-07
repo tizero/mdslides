@@ -20,8 +20,8 @@ table tr td {
 }
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #000;
-        color: #bdbdbd;
+        background-color: #282c34;
+        color: #bbc2cf;
     }
-    a { color: #56c8ff; }
+    a { color: #51afef; }
 }

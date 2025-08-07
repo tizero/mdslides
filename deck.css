@@ -18,10 +18,10 @@
 /* BEGIN custom elements */
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: #000;
-		color: #bdbdbd;
+		background-color: #282c34;
+		color: #bbc2cf;
 	}
-    a { color: #56c8ff; }
+    a { color: #51afef; }
 }
 /* END custom elements */
 
@@ -71,6 +71,7 @@ section {
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-rows: max-content;
+	/* Single element overflow does not propagate to section  */
 	grid-template-columns: 100%;
 	row-gap: 1vh;
 	padding: 2vh;
