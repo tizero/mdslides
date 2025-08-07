@@ -18,9 +18,10 @@
 /* BEGIN custom elements */
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: #282C34;
-		color: #BBC2CF;
+		background-color: #000;
+		color: #bdbdbd;
 	}
+    a { color: #56c8ff; }
 }
 /* END custom elements */
 
