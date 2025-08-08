@@ -16,20 +16,19 @@
 */
 
 /* BEGIN custom elements */
+section > ul > li,
+section > ol > li { margin: 1rem 0; }
 body {
 	background-color: #fafafa;
 	color: #383a42;
 }
-section > ul > li,
-section > ol > li {
-	margin: 1rem 0;
-}
+h1, a { color: #4078f2; }
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #282c34;
 		color: #bbc2cf;
 	}
-	a { color: #51afef; }
+	h1, a { color: #51afef; }
 }
 /* END custom elements */
 
