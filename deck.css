@@ -16,6 +16,10 @@
 */
 
 /* BEGIN custom elements */
+body {
+	background-color: #fafafa;
+	color: #383a42;
+}
 section > ul > li,
 section > ol > li {
 	margin: 1rem 0;
@@ -25,7 +29,7 @@ section > ol > li {
 		background-color: #282c34;
 		color: #bbc2cf;
 	}
-    a { color: #51afef; }
+	a { color: #51afef; }
 }
 /* END custom elements */
 
