@@ -67,14 +67,15 @@ section {
 	break-before: page;
 	counter-increment: slide;
 	max-height: 100vh;
-	/* Custom colors */
-	background-color: #fafafa;
-	color: #383a42;
 }
 
-/* Dark color scheme */
+/* Light and dark color schemes */
+body {
+	background-color: #fafafa;
+	color: #383a42
+}
 @media (prefers-color-scheme: dark) {
-	section {
+	body {
 		background-color: #282c34;
 		color: #bbc2cf;
 	}
