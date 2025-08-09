@@ -15,23 +15,6 @@
 ** by Nathan Knowler, https://codepen.io/knowler/pen/eYGRwyb
 */
 
-/* BEGIN custom elements */
-section > ul > li,
-section > ol > li { margin: 1rem 0; }
-body {
-	background-color: #fafafa;
-	color: #383a42;
-}
-h1, a { color: #4078f2; }
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #282c34;
-		color: #bbc2cf;
-	}
-	h1, a { color: #51afef; }
-}
-/* END custom elements */
-
 * { box-sizing: border-box; }
 
 html, body {
@@ -78,13 +61,24 @@ section {
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-rows: max-content;
-	/* Single element overflow does not propagate to section  */
-	grid-template-columns: 100%;
+	grid-template-columns: 1fr;
 	row-gap: 1vh;
 	padding: 2vh;
 	break-before: page;
 	counter-increment: slide;
 	max-height: 100vh;
+	/* Custom colors */
+	background-color: #fafafa;
+	color: #383a42;
+}
+
+/* Dark color scheme */
+@media (prefers-color-scheme: dark) {
+	section {
+		background-color: #282c34;
+		color: #bbc2cf;
+	}
+	a { color: #51afef; }
 }
 
 /* Title slide layout */
@@ -133,6 +127,10 @@ ul > li > ul { list-style-type: square; }
 
 ul, ol { padding-inline-start: 4vw; }
 
+/* Vertical space between items */
+ul > li,
+ol > li { margin-bottom: 1rem; }
+
 blockquote {
 	padding: 0 2vw;
 	border-left: 0.75vw solid;
@@ -151,3 +149,5 @@ th, td {
 	padding: 1vh;
 	border: 0.25vh solid;
 }
+
+.hidden { display: none; }

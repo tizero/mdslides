@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>Presentazione di prova | mdslides</title>
+	<link rel="stylesheet" href="deck.css">
+	<link rel="stylesheet" href="Temml-STIX2.css">
+</head>
+<body>
+<article>
+<section id='page-1'>
+<h1>Presentazione di prova</h1>
+<p>Testo sulla slide iniziale (<em>del titolo</em>)</p>
+</section>
+<section id='page-2'>
+<h2>Esempio di lista</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
+<ul>
+<li>nulla eget sollicitudin lorem, quis viverra neque;</li>
+<li>class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos.</li>
+</ul>
+<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+ridiculus mus.</p>
+</section>
+<section id='page-3'>
+<h2>Funzione di Moebius</h2>
+<p>Per ogni intero positivo <math><mi>n</mi></math>, la funzione di Moebius <math><mrow><mi>μ</mi><mo form="prefix" stretchy="false">(</mo><mi>n</mi><mo form="postfix" stretchy="false">)</mo></mrow></math> è definita come
+segue:</p>
+<ul>
+<li><p>Se <math><mrow><mi>n</mi><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math>, allora <math><mrow><mi>μ</mi><mo form="prefix" stretchy="false">(</mo><mn>1</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math></p>
+</li>
+<li><p>Se <math><mrow><mi>n</mi><mo>&gt;</mo></mrow><mrow><mn>1</mn></mrow></math> e <math><mrow><mi>n</mi><mo>=</mo></mrow><mrow><msubsup><mi>p</mi><mn>1</mn><msub class="tml-med-pad"><mi>a</mi><mn>1</mn></msub></msubsup><mo>⋯</mo></mrow><mrow><msubsup><mi>p</mi><mi>k</mi><msub class="tml-med-pad"><mi>a</mi><mi>k</mi></msub></msubsup></mrow></math> è la sua scomposizione in
+fattori primi, allora</p>
+<p><math display="block" class="tml-display" style="display:block math;"><mrow><mi>μ</mi><mo form="prefix" stretchy="false">(</mo><mi>n</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true" form="prefix">{</mo><mtable><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mrow><mo form="prefix" stretchy="false">(</mo><mo form="prefix" stretchy="false">−</mo><mn>1</mn><msup><mo form="postfix" stretchy="false">)</mo><mi>k</mi></msup></mrow></mtd><mtd class="tml-left" style="padding-left:1em;padding-right:0em;"><mrow><mtext>se </mtext><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><msub><mi>a</mi><mn>2</mn></msub><mo>=</mo><mo>⋯</mo><mo>=</mo><msub><mi>a</mi><mi>k</mi></msub><mo>=</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mn>0</mn></mtd><mtd class="tml-left" style="padding-left:1em;padding-right:0em;"><mtext>altrimenti</mtext></mtd></mtr></mtable><mo fence="true" form="postfix"></mo></mrow></mrow></math></p>
+</li>
+</ul>
+</section>
+<section id='page-4'>
+<h2>Proprietà della funzione <math><mrow><mi>μ</mi><mo form="prefix" stretchy="false">(</mo><mi>n</mi><mo form="postfix" stretchy="false">)</mo></mrow></math></h2>
+<p>Per ogni intero <math><mrow><mi>n</mi><mo>&gt;</mo></mrow><mrow><mn>1</mn></mrow></math> si ha</p>
+<p><math display="block" class="tml-display" style="display:block math;"><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>d</mi><mo lspace="0.22em" rspace="0.22em" stretchy="false">|</mo><mi>n</mi></mrow></munder></mrow><mi>μ</mi><mo form="prefix" stretchy="false">(</mo><mi>d</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow></math></p>
+<p>dove la somma è effettuata al variare di tutti i divisori <math><mi>d</mi></math> di <math><mi>n</mi></math>.</p>
+</section>
+<section id='page-5'>
+<h1></h1>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 491.04 24.48" data-pikchr-date="20250321215505" style='font-size:initial;'>
+<text x="245.52" y="12.24" text-anchor="middle" fill="currentColor" dominant-baseline="central">Questa è in realtà un'immagine SVG generata con pikchr.</text>
+</svg>
+</section>
+<section id='page-6'>
+<h2>Esempio di codice</h2>
+<pre><code>#! /usr/bin/env awk -f
+
+/^:::+$/ {
+        print lastSection ? &quot;&lt;/section&gt;&quot; : &quot;&lt;article&gt;&quot;
+        printf &quot;&lt;section id='page-%d'&gt;\n&quot;, ++page
+        lastSection = NR
+}
+
+(NR != lastSection)
+
+END {
+        if(lastSection)
+                print &quot;\n\n&lt;/section&gt;\n&lt;/article&gt;&quot;
+}
+</code></pre>
+</section>
+</article>
+</body>
+</html>
